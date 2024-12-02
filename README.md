@@ -7,6 +7,7 @@ ORM: JPA для создания сущностей и работы с базо�
 Основные классы и их отношения:
 
 Driver: 
+--
   Атрибуты:
   id: Long
   name: String
@@ -15,8 +16,9 @@ Driver:
 
   Методы:
   assignCar(Car): void
---
+
 Car:
+--
   Атрибуты:
   id: Long
   model: String
@@ -27,8 +29,9 @@ Car:
   Методы:
   assignDriver(Driver): void
   service(): void
---
+
 Trip:
+--
   Атрибуты:
   id: Long
   startTime: LocalDateTime
@@ -39,8 +42,9 @@ Trip:
   Методы:
   start(): void
   end(): void
---
+
 Service:
+--
   Атрибуты:
   id: Long
   serviceTime: LocalDateTime
@@ -50,6 +54,7 @@ Service:
   performService(): void
 
 Report:
+--
   Методы:
   generateUsageReport(): List<Trip>
   generateDriverWorkReport(): List<Driver>
