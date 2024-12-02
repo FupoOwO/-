@@ -15,7 +15,7 @@ Driver:
 
   Методы:
   assignCar(Car): void
-
+--
 Car:
   Атрибуты:
   id: Long
@@ -27,7 +27,7 @@ Car:
   Методы:
   assignDriver(Driver): void
   service(): void
-
+--
 Trip:
   Атрибуты:
   id: Long
@@ -39,7 +39,7 @@ Trip:
   Методы:
   start(): void
   end(): void
-
+--
 Service:
   Атрибуты:
   id: Long
